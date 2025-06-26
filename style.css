@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
+body {
+    background-image: url('image/image\ 7.jpg');
+    background-size: 100vw 100vh;
+    background-color: rgb(253, 253, 253, 0.4);
+    background-blend-mode: lighten;
+    margin: 0;
+    padding: 0;
+}
+
+.image {
+    width: 500px;
+    height: 500px;
+    margin-left: 370px;
+    margin-top: 40px;
+    border-radius: 30px;
+    transform-origin: 60% 40%;
+    cursor: pointer;
+    /* Optional: shows clickable */
+}
+
+
+/* Animation class added dynamically */
+.image.animate {
+    animation: enterTV 2s forwards;
+}
+
+@keyframes enterTV {
+    0% {
+        transform: scale(1) rotate(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(10) translate(10%, 10%);
+        opacity: 0;
+    }
+}
+
+.form {
+    display: none;
+    width: 1265px;
+    height: 586.5px;
+    background-image: url('image/image\ 8.jpg');
+    background-color: rgb(255, 255, 255, 0.4);
+    background-blend-mode: lighten;
+    background-repeat: no;
+    background-size: 100vw 100vh;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.box {
+    width: 400px;
+    height: 90%;
+    background-color: rgba(138, 194, 230, 0.4);
+    border-radius: 20px;
+    font-family: 'Pixelify Sans', sans-serif;
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.element {
+    width: 400px;
+    height: 87%;
+    border-radius: 20px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+}
+input{
+    width:180px;
+    height: 90px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    opacity:80%;
+    border: 2px solid black;
+}

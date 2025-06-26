@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruitment Form</title>
+    <link rel="stylesheet" href="style.css">
+ </head>
+<body>
+
+    <div class="container">
+        <img src="image/image 7.jpg" alt="" class="image">
+    </div>
+
+    <div class="form">
+        <div class="box">
+            REGISTERATION FORM
+            <br><br>
+            <div class="element">
+            <input type="text" placeholder="Enter your name"/>
+            <br>
+            <input type="text" placeholder="Enter your name"/> <br>
+            <input type="text" placeholder="Enter your email id"/> <br>
+            <input type="text" placeholder="Phone Number"/> <br>
+            <input type="text" placeholder="Enter your name"/> <br>
+            <input type="text" placeholder="Enter your name"/> <br>
+            <input type="text" placeholder="Enter your name"/> <br>
+            <input type="text" placeholder="Enter your name"/> <br>
+            </div>
+            
+        </div>
+    </div>
+
+<script>
+    const screenImage = document.querySelector('.image');
+    const screenContainer = document.querySelector('.container');
+    const formContainer = document.querySelector('.form');
+
+    screenImage.addEventListener('click', () => {
+        screenImage.classList.add('animate'); // Add animation class
+    });
+
+    screenImage.addEventListener('animationend', () => {
+        screenContainer.style.display = 'none';
+        document.body.style.background = 'linear-gradient(to right, #1f1c2c, #928dab)';
+        formContainer.style.display = 'flex';
+    });
+</script>
+
+</body>
+</html>
